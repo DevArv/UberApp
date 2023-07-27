@@ -8,26 +8,24 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\joan_\\.nuget\\packages\\": {}
+    "/Users/alexrodriguez/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\WorkSpace\\CursoPOOUber\\Csharp\\Csharp.csproj",
+      "projectUniqueName": "/Users/alexrodriguez/Documents/UberApp/CursoPOOUber/Csharp/Csharp.csproj",
       "projectName": "Csharp",
-      "projectPath": "D:\\WorkSpace\\CursoPOOUber\\Csharp\\Csharp.csproj",
-      "packagesPath": "C:\\Users\\joan_\\.nuget\\packages\\",
-      "outputPath": "D:\\WorkSpace\\CursoPOOUber\\Csharp\\obj\\",
+      "projectPath": "/Users/alexrodriguez/Documents/UberApp/CursoPOOUber/Csharp/Csharp.csproj",
+      "packagesPath": "/Users/alexrodriguez/.nuget/packages/",
+      "outputPath": "/Users/alexrodriguez/Documents/UberApp/CursoPOOUber/Csharp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\joan_\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/alexrodriguez/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -61,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.306/RuntimeIdentifierGraph.json"
       }
     }
   }
