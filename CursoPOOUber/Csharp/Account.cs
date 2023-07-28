@@ -4,11 +4,7 @@ namespace AccountNS
 {
     public class Account
     {
-        public Account()
-        {
-            
-        }
-
+ 
         public int Id { get; set; }
         public string Name { get; set; } = "";
         public int Document { get; set; }

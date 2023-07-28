@@ -1,6 +1,9 @@
-using System.Collections.Generic;
+using CarNS;
+using AccountNS;
 
-public class UberVan : Car 
+namespace CarTypes.UberVan
+{
+    public class UberVan : Car 
 {
     Dictionary<string, Dictionary<string, int>> typeCarAccepted;
     List<string> seatsMaterial;
@@ -11,4 +14,5 @@ public class UberVan : Car
         this.typeCarAccepted = typeCarAccepted;
         this.seatsMaterial = seatsMaterial;
     }
+}
 }

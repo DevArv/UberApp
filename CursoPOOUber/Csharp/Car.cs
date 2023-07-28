@@ -11,16 +11,16 @@ namespace CarNS
     public Account Driver { get; set;} = "";   
     public int Passengers { get; set;}
 
-    public Car(string License, Account Driver)
+    public Car(string license, Account driver)
     {
-        this.License = License;
-        this.Driver = Driver;
+        this.License = license;
+        this.Driver = driver;
     }
 
-    // public void PrintDataCar()
-    // {
-    //     Console.WriteLine("Estos son los datos de este carro: " + "Id: " + Id + " Licencia: " + License + " Driver: " + Driver + " Pasajeros: " + Passengers);
-    // }
+    public void PrintDataCar()
+    {
+        Console.WriteLine("Estos son los datos de este carro: " + "Id: " + Id + " Licencia: " + License + " Driver: " + Driver + " Pasajeros: " + Passengers);
+    }
 
     }
 }

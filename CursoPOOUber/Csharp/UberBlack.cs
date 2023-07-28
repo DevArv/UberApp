@@ -1,14 +1,18 @@
-using System.Collections.Generic;
+using CarNS;
+using AccountNS;
 
-public class UberBlack : Car
+namespace CarTypes.UberBlack
 {
-    Dictionary<string, Dictionary<string, int>> typeCarAccepted;
-    List<string> seatsMaterial;
-
-    public UberBlack(string license, Account Driver, Dictionary<string, Dictionary<string, int>> typeCarAccepted,
-        List<string> seatsMaterial) : base(License, Driver)
+    public class UberBlack : Car
     {
-        this.typeCarAccepted = typeCarAccepted;
-        this.seatsMaterial = seatsMaterial;
+        Dictionary<string, Dictionary<string, int>> typeCarAccepted;
+        private List<string> seatsMaterial;
+
+        public UberBlack(string License, Account Driver, Dictionary<string, Dictionary<string, int>> typeCarAccepted,
+        List<string> seatsMaterial) : base(License, Driver)
+        {
+            this.typeCarAccepted = typeCarAccepted;
+            this.seatsMaterial = seatsMaterial;
+        }
     }
 }
