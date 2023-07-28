@@ -1,11 +1,18 @@
-public class UberX : Car
-{
-    public string Brand { get; set; }
-    public string Model { get; set; }
+using CarNS;
+using AccountNS;
 
-    public UberX(string License, Account Driver, string Brand, string Model) : base(License, Driver)
+namespace CarTypes.UberXCar
+{
+    public class UberX : Car
     {
-        Brand = Brand;
-        Model = Model;
+        public string Brand { get; set; }
+        public string Model { get; set; }
+
+        public UberX(string License, Account Driver, string Brand, string Model) : base(License, Driver)
+        {
+            this.Brand = Brand;
+            this.Model = Model;
+        }
     }
+
 }
