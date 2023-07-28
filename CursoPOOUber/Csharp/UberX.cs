@@ -8,10 +8,10 @@ namespace CarTypes.UberXCar
         public string Brand { get; set; }
         public string Model { get; set; }
 
-        public UberX(string License, Account Driver, string Brand, string Model) : base(License, Driver)
+        public UberX(string License, Account Driver, string brand, string model) : base(License, Driver)
         {
-            this.Brand = Brand;
-            this.Model = Model;
+            this.Brand = brand;
+            this.Model = model;
         }
     }
 

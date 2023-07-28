@@ -8,9 +8,9 @@ namespace CarTypes.UberPool
         public string Brand { get; set; }
         public string Model { get; set; }
 
-        public UberPool(string License, Account Driver, string Brand, string Model) : base(License, Driver) {
-            this.Brand = Brand;
-            this.Model = Model;
+        public UberPool(string License, Account Driver, string brand, string model) : base(License, Driver) {
+            this.Brand = brand;
+            this.Model = model;
         }
     }
 }
