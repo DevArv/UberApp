@@ -10,13 +10,16 @@ package CursoPOOUber.Java;
 public class Main {
     public static void main(String[] args) {
         // System.out.println("Hello World");
+    
+        System.out.println("Empezando proceso...");
 
-        Car car = new Car("LICDEMO01", new Account("Joan Alexander", "DOCDEMO01"));
+        System.out.println("Car...");
+        Car car = new Car("LicDemo01", new Account("Alexander Rodriguez", "DocDemo01", "prueba@prueba.com", "passDemo01"));
         car.passengers = 4;
         car.printDataCar();
 
-        Car car2 = new Car("LICDEMO02", new Account("Nathaly Diaz", "DOCDEMO02"));
-        car2.passengers = 5;
-        car2.printDataCar();
+        System.out.println("Solicitando UberX");
+
+        // pendiente crear print para UberX
     }
 }
