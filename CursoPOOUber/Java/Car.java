@@ -1,15 +1,15 @@
 package CursoPOOUber.Java;
 
-class Car {
-    Integer id;
-    String license;
-    Account driver;
-    Integer passengers;
+//Definition of the "Car" class
+public class Car {
+    private Integer id;
+    public String license;
+    public Account driver;
+    public Integer passengers;
 
-    //Con el metodo constructor le estamos diciendo al programa cuales parametros son obligarotios para crear un metodo
-    //tipo Car.
-    //El uso de Account driver, es para instanciar de que un conductor debe de tener una cuenta.
-    //El uso de this es para diferenciar e indicar de que la primera es una variable.
+    //With the constructor method we are indicating to the program which parameters are mandatory to create a method.
+    //The use of Account driver, is to instantiate that a driver must have an account.
+    //The use of "this" is to differentiate and to indicate that the first one is a variable.
 
     public Car(String license, Account driver){
         this.license = license;
@@ -17,8 +17,7 @@ class Car {
 
     }
     
-    //Con el metodo constructor le estamos diciendo al programa cuales parametros son obligatorios para crear un metodo 
-    //tipo Account.
+    //With the constructor method we are indicating to the program which parameters are mandatory to create an "Account" type method.
 
     void printDataCar() {
         System.out.println("License: " + license + " Driver's name: " + driver.name + " Passengers: " + passengers);
