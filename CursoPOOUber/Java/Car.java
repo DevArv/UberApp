@@ -21,6 +21,6 @@ class Car {
     //tipo Account.
 
     void printDataCar() {
-        System.out.println("License: " + license + " Driver's name: " + driver.name);
+        System.out.println("License: " + license + " Driver's name: " + driver.name + " Passengers: " + passengers);
     }
 }

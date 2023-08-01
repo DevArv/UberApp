@@ -14,7 +14,7 @@ public class Main {
         System.out.println("Empezando proceso...");
 
         System.out.println("Car...");
-        Car car = new Car("LicDemo01", new Account("Alexander Rodriguez", "DocDemo01", "prueba@prueba.com", "passDemo01"));
+        Car car = new Car("LicDemo01", new Account("Joan Alexander", "DocDemo01"));
         car.passengers = 4;
         car.printDataCar();
 
