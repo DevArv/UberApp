@@ -1,4 +1,5 @@
-//Con estos cambios estamos creando el metodo constructor estamos indicando cuales de estas propiedades son obligatorias.
+//With these changes we are creating the constructor method we are indicating which of these properties are mandatory.
+//Definition of the "Car" class
 
 class Car{
 
@@ -10,8 +11,8 @@ class Car{
     }
 
     printDataCar() {
-        console.log(this.driver)
+        console.log(this.license)
         console.log(this.driver.name)
-        console.log(this.driver.document)
+        console.log(this.passenger)
     }
 }

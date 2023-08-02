@@ -2,7 +2,7 @@ package CursoPOOUber.Java;
 
 //Definition of the "Account" class.
 public class Account {
-    private Integer id;
+    Integer id;
     public String name;
     public String document;
     public String email;

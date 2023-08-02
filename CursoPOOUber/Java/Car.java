@@ -2,7 +2,7 @@ package CursoPOOUber.Java;
 
 //Definition of the "Car" class
 public class Car {
-    private Integer id;
+    Integer id;
     public String license;
     public Account driver;
     public Integer passengers;
