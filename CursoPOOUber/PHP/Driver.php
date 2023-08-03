@@ -1,11 +1,7 @@
 <?php
-//Definition of the "Account" class.
-class Account {
-    public $id;
-    public $name;
-    public $document;
-    public $email;
-    public $password;
+require_once('account.php');
+
+class Driver extends Account {
 
     public function __construct($name, $document) {
         $this->name = $name;

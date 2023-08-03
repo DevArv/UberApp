@@ -9,4 +9,8 @@ class UberPool extends Car {
         this.brand = brand;
         this.model = model;
     }
+
+    void printUberPoolData(){
+        System.out.println("Car Brand: " + brand + " UberX Model: " + model);
+    }
 }

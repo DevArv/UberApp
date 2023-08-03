@@ -9,6 +9,10 @@ class UberPool extends Car {
         $this->brand = $brand;
         $this->model = $model;
     }
+
+    public function printUberPoolData() {
+        echo " Car Brand: " + $this->brand + " UberX Model: " + $this->model;
+    }
 }
 
 ?>

@@ -17,4 +17,8 @@ class UberBlack extends Car {
         this.typeCarAccepted = typeCarAccepted;
         this.seatsMaterial = seatsMaterial;
     }
+
+    void printUberBlackData() {
+        System.out.println(" Type Car Accepted: " + typeCarAccepted + " Seats Material: " + seatsMaterial);
+    }
 }
