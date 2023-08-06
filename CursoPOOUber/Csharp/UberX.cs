@@ -3,6 +3,7 @@ using AccountNS;
 
 namespace CarTypes.UberXCar
 {
+    //Definition of the "UberX" class, which inherits from the "Car" class.
     public class UberX : Car
     {
         public string Brand { get; set; }
@@ -13,6 +14,9 @@ namespace CarTypes.UberXCar
             this.Brand = brand;
             this.Model = model;
         }
-    }
 
+        void PrintUbercData() {
+            Console.WriteLine("Car Brand: " + Brand + " Uberx Model: " + Model);
+        }
+    }
 }

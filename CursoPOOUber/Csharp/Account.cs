@@ -2,9 +2,11 @@ using System;
 
 namespace AccountNS
 {
+
+    //definition of the "Account" class.
     public class Account
     {
- 
+        //Attributes
         public int Id { get; set; }
         public string Name { get; set; } = "";
         public int Document { get; set; }
@@ -12,9 +14,16 @@ namespace AccountNS
 
         public string Password { get; set; } = "";
 
-        public void PrintDataAccount()
+        public Account(string name, int document) 
         {
-            Console.WriteLine("Estos son los datos de esta cuenta: " + "Id: " + Id + " Nombre: " + Name + " Documento: " + Document + " Correo: " + Email + " Contraseña: " + Password);
+            this.Name = name;
+            this.Document = document;
+
+        }
+        
+        public virtual void PrintDataDriver()
+        {
+            Console.WriteLine("These are the deatils of this account: " + "Name: " + Name + " Document: " + Document + " E-mail: " + Email + " Password: " + Password);
         }
 
         public static implicit operator Account(string v)

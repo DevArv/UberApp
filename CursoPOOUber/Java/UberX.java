@@ -1,6 +1,6 @@
 package CursoPOOUber.Java;
 
-//Definition of the "UberX" class, which inherits form the class "Car".
+//Definition of the "UberX" class, which inherits form the "Car" class.
 class UberX extends Car {
     String brand;
     String model;

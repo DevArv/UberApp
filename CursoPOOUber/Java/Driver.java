@@ -1,6 +1,6 @@
 package CursoPOOUber.Java;
 
-//Definition of the child class "Driver", which inherits from the class "Car".
+//Definition of the child "Driver" class, which inherits from the class "Car".
 public class Driver extends Account{
     
     public Driver(String name, String document){

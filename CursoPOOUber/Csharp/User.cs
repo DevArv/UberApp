@@ -2,19 +2,16 @@ using AccountNS;
 
 namespace UserDetails
 {
+    //Definition of the child "User" class, which inherits from "Account" class.
     public class User : Account
     {
-        public User(string name, int document, string email, string password)
+        public User(string name, int document) : base(name, document)
         {
-            this.Name = name;
-            this.Document = document;
-            this.Email = email;
-            this.Password = password;
+
+        }
+        void PrintDataUser() {
+            Console.WriteLine("User ID: " + Id + " Name: " + Name + " Document: " + Document);
         }
 
-        public void PrintUserData()
-        {
-            Console.WriteLine("User Name: " + Name, " User Document: ", Document, " User Email: " + Email, " User Password: " + Password);
-        }
     }
 }

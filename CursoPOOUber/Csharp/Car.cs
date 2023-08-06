@@ -4,8 +4,11 @@ using AccountNS;
 
 namespace CarNS
 {
+    //Definition of "Car" class.
     public class Car
     {
+
+    //Attributes    
     public int Id { get; set;}
     public string License { get; set;} = "";
     public Account Driver { get; set;} = "";   
@@ -19,7 +22,7 @@ namespace CarNS
 
     public void PrintDataCar()
     {
-        Console.WriteLine("Estos son los datos de este carro: " + "Id: " + Id + " Licencia: " + License + " Driver: " + Driver + " Pasajeros: " + Passengers);
+        Console.WriteLine("These are the details of this car: " + " Licencia: " + License + " Driver's name: " + Driver.Name + " Passengers: " + Passengers);
     }
 
     }
