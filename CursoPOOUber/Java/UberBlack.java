@@ -2,12 +2,12 @@ package CursoPOOUber.Java;
 import java.util.ArrayList;
 import java.util.Map;
 
-//El primer Map representa la marca del UberBlack
-//El segundo Map representa el modelo y el año del vehiculo
+//The first Map represents the brand of the UberBlack
+//The second Map represents the model.
 class UberBlack extends Car {
     Map<String, Map<String,Integer>> typeCarAccepted;
 
-    //Material de los asientos.
+    //Car seats material.
     ArrayList<String> seatsMaterial;
 
     public UberBlack(String license, Account driver,
@@ -19,6 +19,6 @@ class UberBlack extends Car {
     }
 
     void printUberBlackData() {
-        System.out.println(" Type Car Accepted: " + typeCarAccepted + " Seats Material: " + seatsMaterial);
+        System.out.println("Type Car Accepted: " + typeCarAccepted + " Seats Material: " + seatsMaterial);
     }
 }

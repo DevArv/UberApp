@@ -1,6 +1,9 @@
 package CursoPOOUber.Java;
 
+//Definition of the "UberPool" class, which inherits from "Car" class.
 class UberPool extends Car {
+
+    //Attributes
     String brand;
     String model;
 
@@ -11,6 +14,6 @@ class UberPool extends Car {
     }
 
     void printUberPoolData(){
-        System.out.println("Car Brand: " + brand + " UberX Model: " + model);
+        System.out.println("Car Brand: " + brand + " UberPool Model: " + model);
     }
 }

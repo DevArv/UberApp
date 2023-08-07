@@ -19,6 +19,6 @@ class UberVan extends Car {
     }
 
     void printUberVanData() {
-        System.out.println(" Type Car Accepted: " + typeCarAccepted + " Seats Material: " + seatsMaterial);
+        System.out.println("Type Car Accepted: " + typeCarAccepted + " Seats Material: " + seatsMaterial);
     }
 }

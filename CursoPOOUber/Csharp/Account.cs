@@ -9,12 +9,12 @@ namespace AccountNS
         //Attributes
         public int Id { get; set; }
         public string Name { get; set; } = "";
-        public int Document { get; set; }
+        public string Document { get; set; }
         public string Email { get; set; } = "";
 
         public string Password { get; set; } = "";
 
-        public Account(string name, int document) 
+        public Account(string name, string document) 
         {
             this.Name = name;
             this.Document = document;
@@ -30,6 +30,9 @@ namespace AccountNS
         {
             throw new NotImplementedException();
         }
+
     }
+
+    
 
 }

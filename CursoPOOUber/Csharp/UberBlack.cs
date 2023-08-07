@@ -3,9 +3,14 @@ using AccountNS;
 
 namespace CarTypes.UberBlack
 {
+
+    //Definition of the "UberBlack" class, which inherits from "Car" class.
     public class UberBlack : Car
     {
+
+        //The first "Dictionary" stores the brand and the second one represents the model.
         Dictionary<string, Dictionary<string, int>> TypeCarAccepted;
+        //Car seats material.
         private List<string> SeatsMaterial;
 
         public UberBlack(string License, Account Driver, Dictionary<string, Dictionary<string, int>> typeCarAccepted,
@@ -13,6 +18,10 @@ namespace CarTypes.UberBlack
         {
             this.TypeCarAccepted = typeCarAccepted;
             this.SeatsMaterial = seatsMaterial;
+        }
+
+        public void PrintUberBlackData() {
+            Console.WriteLine("Type Car Accepted: " + TypeCarAccepted + " Seats Material: " + SeatsMaterial);
         }
     }
 }

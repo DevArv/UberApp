@@ -6,6 +6,8 @@ namespace CarTypes.UberXCar
     //Definition of the "UberX" class, which inherits from the "Car" class.
     public class UberX : Car
     {
+        
+        //Attributes
         public string Brand { get; set; }
         public string Model { get; set; }
 
@@ -15,7 +17,7 @@ namespace CarTypes.UberXCar
             this.Model = model;
         }
 
-        void PrintUbercData() {
+        public void PrintUberxData() {
             Console.WriteLine("Car Brand: " + Brand + " Uberx Model: " + Model);
         }
     }

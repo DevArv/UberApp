@@ -5,7 +5,7 @@ namespace DriverDetails
     //Definition of the child "Driver" class, which inherits from "Car" class.
     public class Driver : Account
     {
-        public Driver(string name, int document) : base (name, document)
+        public Driver(string name, string document) : base (name, document)
         {
 
         }

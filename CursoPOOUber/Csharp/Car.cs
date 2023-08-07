@@ -11,7 +11,7 @@ namespace CarNS
     //Attributes    
     public int Id { get; set;}
     public string License { get; set;} = "";
-    public Account Driver { get; set;} = "";   
+    public Account Driver { get; set;}
     public int Passengers { get; set;}
 
     public Car(string license, Account driver)
@@ -22,7 +22,12 @@ namespace CarNS
 
     public void PrintDataCar()
     {
-        Console.WriteLine("These are the details of this car: " + " Licencia: " + License + " Driver's name: " + Driver.Name + " Passengers: " + Passengers);
+        Console.WriteLine("These are the details of this car: " + " Licencia: " + License + " Driver's Name: " + Driver.Name + " Passengers: " + Passengers);
+    }
+
+    public void PrintCustomerData() 
+    {
+        Console.WriteLine("These are the details of the customer: " + License + " Customer's Name: " + Driver.Name);
     }
 
     }
