@@ -22,7 +22,7 @@ namespace CarNS
 
     public void PrintDataCar()
     {
-        Console.WriteLine("These are the details of this car: " + " Licencia: " + License + " Driver's Name: " + Driver.Name + " Passengers: " + Passengers);
+        Console.WriteLine("These are the details of this car: " + " License: " + License + " Driver's Name: " + Driver.Name + " Passengers: " + Passengers);
     }
 
     public void PrintCustomerData() 

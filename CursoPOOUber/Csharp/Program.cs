@@ -2,6 +2,8 @@ using System.Data.Common;
 using CarNS;
 using AccountNS;
 using CarTypes.UberXCar;
+using PaymentTypes;
+using PaymentTypes.CCard;
 
 namespace UberApp
 {
@@ -11,12 +13,6 @@ namespace UberApp
     {
         public static void Main(string[] args)
         {
-            // var car = new Car("LICDEMO001", "Nathaly Diaz");
-            // {
-            //     car.Id = 1;
-            //     car.Passengers = 4;
-            // }
-            // car.PrintDataCar();
 
             Console.WriteLine("Starting Process...");
 
@@ -36,6 +32,13 @@ namespace UberApp
                 uberX.PrintUberxData();
             }
 
+            Console.WriteLine("Method of payment...");
+
+            Console.WriteLine("This user is paying with a credit card...");
+            var ccard = new CCard(01, 0987654321, 312, DateTime.Now);
+            {
+                ccard.PrintCCardData();
+            }
         }
     }
 }

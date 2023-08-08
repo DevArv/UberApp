@@ -1,15 +1,23 @@
 using System;
 
-namespace PaymentNS
+namespace PaymentTypes
 {
+
+    //Definition of the "Payment" class.
     public class Payment
     {
+
+        //Attributes
         public int Id { get; set; }
 
-
-        public void DataPrintPayment()
+        public Payment(int id)
         {
-            Console.WriteLine("");
+            this.Id = id;
+        }
+
+        public void PrintPaymentData()
+        {
+            Console.WriteLine("This is the ID of this payment: " + Id);
         }
     }
 }
