@@ -1,6 +1,11 @@
+//Definition of the "Payment" class.
 class Payment {
 
-    contructor() {
+    constructor(id) {
         this.id
+    }
+
+    printPaymentData() {
+        console.log(this.id);
     }
 }
