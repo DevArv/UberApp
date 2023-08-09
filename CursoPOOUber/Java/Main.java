@@ -1,5 +1,7 @@
 package CursoPOOUber.Java;
 
+import java.time.LocalDate;
+
 //Software UberAapp
 public class Main {
     public static void main(String[] args) {
@@ -19,5 +21,11 @@ public class Main {
         uberX.passengers = 4;
         uberX.printDataCar();
         uberX.printUberxData();
+
+        System.out.println("Method of payment...");
+
+        System.out.println("This user is paying with a credit card...");
+        CCard ccard = new CCard(01, 1098765432, 321, LocalDate.now());
+        ccard.printCCardData();
     }
 }
