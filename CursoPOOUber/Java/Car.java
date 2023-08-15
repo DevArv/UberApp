@@ -5,7 +5,7 @@ public class Car {
     Integer id;
     public String license;
     public Account driver;
-    public Integer passengers;
+    private Integer passengers;
 
     //With the constructor method we are indicating to the program which parameters are mandatory to create a method.
     //The use of Account driver, is to instantiate that a driver must have an account.
@@ -21,5 +21,19 @@ public class Car {
 
     void printDataCar() {
         System.out.println("License: " + license + " Driver's name: " + driver.name + " Passengers: " + passengers);
+    }
+
+    //With set and get, we establish the rule of what is the mandatory number of passengers for each type of Uber.
+
+    public Integer getPassengers(){
+        return passengers;
+    }
+
+    public void setPassengers(Integer passengers){
+        if(passengers == 4){
+            this.passengers = passengers;
+        }else{
+            System.out.println("This type of Uber is only for 4 passengers.");
+        }
     }
 }
