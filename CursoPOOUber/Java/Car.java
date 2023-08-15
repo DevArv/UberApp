@@ -20,7 +20,9 @@ public class Car {
     //With the constructor method we are indicating to the program which parameters are mandatory to create an "Account" type method.
 
     void printDataCar() {
-        System.out.println("License: " + license + " Driver's name: " + driver.name + " Passengers: " + passengers);
+        if(passengers != null){
+            System.out.println("License: " + license + " Driver's name: " + driver.name + " Passengers: " + passengers);
+        }
     }
 
     //With set and get, we establish the rule of what is the mandatory number of passengers for each type of Uber.
