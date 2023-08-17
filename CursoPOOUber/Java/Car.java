@@ -2,9 +2,9 @@ package CursoPOOUber.Java;
 
 //Definition of the "Car" class
 public class Car {
-    Integer id;
-    public String license;
-    public Account driver;
+    private Integer id;
+    String license;
+    Account driver;
     private Integer passengers;
 
     //With the constructor method we are indicating to the program which parameters are mandatory to create a method.
@@ -38,4 +38,30 @@ public class Car {
             System.out.println("This type of Uber is only for 4 passengers.");
         }
     }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getLicense() {
+        return license;
+    }
+
+    public void setLicense(String license) {
+        this.license = license;
+    }
+
+    public Account getDriver() {
+        return driver;
+    }
+
+    public void setDriver(Account driver) {
+        this.driver = driver;
+    }
+
+    
 }

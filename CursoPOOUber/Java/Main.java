@@ -20,7 +20,13 @@ public class Main {
         UberX uberX = new UberX("LicDemo02", new Account("Nathaly Diaz", "DocDemo02"), "Hyundai", "I10");
         uberX.getPassengers();
         uberX.printDataCar();
-        uberX.printUberxData();
+ 
+        // System.out.println("Requesting an UberVan");
+
+        // System.out.println("UberVan requested...");
+        // UberVan uberVan = new UberVan("LicDemo02", new Account("Nathaly Diaz", "DocDemo02"));
+        // uberVan.printDataCar();
+        // uberVan.getPassengers();
 
         System.out.println("Method of payment...");
 

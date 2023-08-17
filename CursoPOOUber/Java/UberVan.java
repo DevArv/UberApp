@@ -9,6 +9,12 @@ class UberVan extends Car {
 
     //Seat material.
     ArrayList<String> seatsMaterial;
+    private Integer passengers;
+
+
+    public UberVan(String license, Account driver){
+        super(license, driver);
+    }
 
     public UberVan(String license, Account driver,
     Map<String, Map<String,Integer>> typeCarAccepted,
@@ -16,10 +22,22 @@ class UberVan extends Car {
         super(license, driver);
         this.typeCarAccepted = typeCarAccepted;
         this.seatsMaterial = seatsMaterial;
-        setPassengers(6);
     }
 
-    void printUberVanData() {
-        System.out.println("Type Car Accepted: " + typeCarAccepted + " Seats Material: " + seatsMaterial);
+    @Override
+    public void setPassengers(Integer passengers){
+        if(passengers == 6){
+            this.passengers = passengers;
+        }else{
+            System.out.println("This type of Uber is only for 6 passengers.");
+        }
     }
+
+    @Override
+    void printDataCar(){
+        super.printDataCar();
+        System.out.println("License: " + license + " Driver: " + driver.name);
+    }
+
+
 }

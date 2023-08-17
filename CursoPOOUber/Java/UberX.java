@@ -14,7 +14,9 @@ class UberX extends Car {
         setPassengers(4);
     }
 
-    void printUberxData(){
+    @Override
+    void printDataCar(){
+        super.printDataCar();
         System.out.println("Car Brand: " + brand + " UberX Model: " + model);
     }
 }
