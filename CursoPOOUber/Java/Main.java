@@ -18,7 +18,7 @@ public class Main {
 
         System.out.println("UberX requested...");
         UberX uberX = new UberX("LicDemo02", new Account("Nathaly Diaz", "DocDemo02"), "Hyundai", "I10");
-        uberX.setPassengers(4);
+        uberX.getPassengers();
         uberX.printDataCar();
         uberX.printUberxData();
 

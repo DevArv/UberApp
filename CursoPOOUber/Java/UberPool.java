@@ -11,6 +11,7 @@ class UberPool extends Car {
         super(license, driver);
         this.brand = brand;
         this.model = model;
+        setPassengers(5);
     }
 
     void printUberPoolData(){

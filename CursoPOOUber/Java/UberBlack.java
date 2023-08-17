@@ -16,6 +16,7 @@ class UberBlack extends Car {
         super(license, driver);
         this.typeCarAccepted = typeCarAccepted;
         this.seatsMaterial = seatsMaterial;
+        setPassengers(4);
     }
 
     void printUberBlackData() {
