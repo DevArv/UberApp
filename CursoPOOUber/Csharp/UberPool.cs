@@ -12,13 +12,17 @@ namespace CarTypes.UberPool
         public string Brand { get; set; }
         public string Model { get; set; }
 
-        public UberPool(string License, Account Driver, string brand, string model) : base(License, Driver) {
+        public UberPool(string License, Account Driver, string brand, string model) : base(License, Driver) 
+        {
             this.Brand = brand;
             this.Model = model;
+            SetPassengers(4);
         }
 
-        public void PrintUberPoolData() {
-            Console.WriteLine("Car Brand: " + Brand + " UberPool Model: " + Model);
+        public override void PrintDataCar()
+        {
+            base.PrintDataCar();
+            Console.WriteLine("Car Brand: " + Brand + " UberPool model: " + Model);
         }
     }
 }

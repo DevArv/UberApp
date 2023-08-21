@@ -12,6 +12,7 @@ namespace CarTypes.UberBlack
         Dictionary<string, Dictionary<string, int>> TypeCarAccepted;
         //Car seats material.
         private List<string> SeatsMaterial;
+        private int Passengers;
 
         public UberBlack(string License, Account Driver, Dictionary<string, Dictionary<string, int>> typeCarAccepted,
         List<string> seatsMaterial) : base(License, Driver)
@@ -20,8 +21,21 @@ namespace CarTypes.UberBlack
             this.SeatsMaterial = seatsMaterial;
         }
 
-        public void PrintUberBlackData() {
-            Console.WriteLine("Type Car Accepted: " + TypeCarAccepted + " Seats Material: " + SeatsMaterial);
+        public override void SetPassengers(int passengers)
+        {
+            if(passengers == 4)
+            {
+                Passengers = passengers;
+            }else{
+                Console.WriteLine("This type of Uber is only for 4 passengers.");
+            }
         }
+
+        public override void PrintDataCar()
+        {
+            base.PrintDataCar();
+            Console.WriteLine("License: " + License + " Driver: " + Driver.Name);
+        }
+
     }
 }

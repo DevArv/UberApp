@@ -11,16 +11,29 @@ namespace CarTypes.UberVan
         Dictionary<string, Dictionary<string, int>> TypeCarAccepted;
         //Car seats material.
         private List<string> SeatsMaterial;
+        private int Passengers;
 
-        public UberVan(string License, Account Driver, Dictionary<string, Dictionary<string,int>> typeCarAccepted,
-            List<string> seatsMaterial) : base(License, Driver)
+    public UberVan(string License, Account Driver, Dictionary<string, Dictionary<string,int>> typeCarAccepted,
+    List<string> seatsMaterial) : base(License, Driver)
     {
         this.TypeCarAccepted = typeCarAccepted;
         this.SeatsMaterial = seatsMaterial;
     }
 
-        public void PrintUberVanData() {
-            Console.WriteLine("Type Car Accepted: " + TypeCarAccepted + " Seats Material: " + SeatsMaterial);
+    public override void SetPassengers(int passengers)
+    {
+        if(passengers == 6)
+        {
+            Passengers = passengers;
+        }else {
+            Console.WriteLine("This type of Uber is only for 6 passengers.");
+        }
+    }
+
+        public override void PrintDataCar()
+        {
+            base.PrintDataCar();
+            Console.WriteLine("License: " + License + " Driver: " + Driver.Name);
         }
 
     }

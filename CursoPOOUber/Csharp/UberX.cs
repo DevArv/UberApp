@@ -15,10 +15,13 @@ namespace CarTypes.UberXCar
         {
             this.Brand = brand;
             this.Model = model;
+            SetPassengers(4);
         }
 
-        public void PrintUberxData() {
-            Console.WriteLine("Car Brand: " + Brand + " Uberx Model: " + Model);
+        public override void PrintDataCar()
+        {
+            base.PrintDataCar();
+            Console.WriteLine("Car Brand: " + Brand + " UberX model: " + Model);
         }
     }
 }

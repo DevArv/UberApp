@@ -14,7 +14,9 @@ class UberPool extends Car {
         setPassengers(4);
     }
 
-    void printUberPoolData(){
-        System.out.println("Car Brand: " + brand + " UberPool Model: " + model);
+    @Override
+    void printDataCar(){
+        super.printDataCar();
+        System.out.println("Car Brand: " + brand + " UberPool model: " + model);
     }
 }
