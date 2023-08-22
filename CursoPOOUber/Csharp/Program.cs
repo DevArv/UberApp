@@ -19,7 +19,8 @@ namespace UberApp
             Console.WriteLine("Customer requesting a car...");
             var car = new Car("LICDEMO01", new Account("Joan Alexander", "DOCDEMO01"));
             {
-                car.PrintCustomerData();
+                car.SetPassengers(4);
+                car.PrintDataCar();
             }
 
             Console.WriteLine("Requesting an UberX");
@@ -27,9 +28,8 @@ namespace UberApp
             Console.WriteLine("UberX requested");
             var uberX = new UberX("LICDEMO02", new Account("Nathaly Diaz", "DOCDEMO02"), "Hyundai", "I10");
             {
-                uberX.Passengers = 4;
+                uberX.GetPassengers();
                 uberX.PrintDataCar();
-                uberX.PrintUberxData();
             }
 
             Console.WriteLine("Method of payment...");
