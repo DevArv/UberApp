@@ -3,5 +3,11 @@ class UberPool extends Car {
         super(license, driver)
         this.brand = brand;
         this.model = model;
+        this.setPassengers(4);
+    }
+
+    printDataCar() {
+        super.printDataCar();
+        console.log("Car Brand: " + brand + " UberPool model: " + model);
     }
 }

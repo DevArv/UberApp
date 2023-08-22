@@ -11,7 +11,6 @@ class UberVan extends Car {
     ArrayList<String> seatsMaterial;
     private Integer passengers;
 
-
     public UberVan(String license, Account driver){
         super(license, driver);
     }
@@ -38,6 +37,4 @@ class UberVan extends Car {
         super.printDataCar();
         System.out.println("License: " + license + " Driver: " + driver.name);
     }
-
-
 }
