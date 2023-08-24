@@ -11,8 +11,17 @@ class UberBlack extends Car {
         $this->seatsMaterial = $seatsMaterial;
     }
 
-    public function printUberBlackData() {
-        echo " Type Car Accepted: " + $this->typeCarAccepted + " Seats Material: " + $this->seatsMaterial;
+    public function setPassenger($passenger) {
+        if ($passenger == 4) {
+            $this->passenger = $passenger;
+        } else {
+            echo "This type of Uber is only for 4 passengers.";
+        }
+    }
+
+    public function printDataCar() {
+        echo "Type Car Accepted: $this->typeCarAccepted <br>
+                Seats Material: {$this->seatsMaterial} <br>";
     }
 }
 ?>

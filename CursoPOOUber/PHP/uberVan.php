@@ -3,6 +3,7 @@ require_once("car.php");
 class UberVan extends Car {
     public $typeCarAccepted;
     public $seatsMaterial;
+    protected $passenger;
 
     public function __construct($license, $driver, 
     $typeCarAccepted, $seatsMaterial){
@@ -11,8 +12,16 @@ class UberVan extends Car {
         $this->seatsMaterial = $seatsMaterial;
     }
 
-    public function printUberVanData() {
+    public function printDataCar() {
         echo " Type Car Accepted: " + $this->typeCarAccepted + " Seats Material: " + $this->seatsMaterial;
+    }
+
+    public function setPassenger($passenger) {
+        if ($passenger == 6) {
+            $this->passenger = $passenger;
+        } else {
+            echo "This type of Uber is only for 6 passengers.";
+        }
     }
 }
 ?>
